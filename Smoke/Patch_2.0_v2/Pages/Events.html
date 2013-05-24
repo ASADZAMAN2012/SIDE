@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bellmore.nixon.i.patch.com/" />
+<title>Events</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Events</td></tr>
+</thead><tbody>
+<!--Go to Events Landing Page-->
+<tr>
+	<td>open</td>
+	<td>${env}/events</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>regexp:Events on .* Patch</td>
+	<td></td>
+</tr>
+<!--Events page - Top-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(@class,'homepage')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(@href,'join')]/strong[contains(text(),'Get the Daily Newsletter')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(@href,'join')]/strong[contains(text(),'Join')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(@href,'login')]/strong[contains(text(),'Sign In')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=home_menu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=news_menu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=boards_menu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=events_menu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[@class='active']/a[@id='events_menu']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=listings_menu</td>
+	<td></td>
+</tr>
+<!--Twitter and Facebook top header icon-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.inline-icon.icon_twitter-header</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.inline-icon.icon_facebook-header</td>
+	<td></td>
+</tr>
+<!--Search Box-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[name=&quot;keywords&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=button.search-icon.data-tag</td>
+	<td></td>
+</tr>
+<!--Feedback Logo-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=feedback_callout</td>
+	<td></td>
+</tr>
+<!--Town cover photo-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#js-town-cover &gt; div.town-cover-photo</td>
+	<td></td>
+</tr>
+<!--Boards Page - Side Bar-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='sidebar']/div[contains(@id,'allEvents')]//ul[@id='allTopics']//i[contains(@class,'icon_all-news')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='sidebar']/div[contains(@id,'allEvents')]//ul[@id='allTopics']//span[contains(text(),'All Events')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='sidebar']/div[contains(@id,'allEvents')]//ul[@id='allTopics']//span[contains(text(),'Family')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='sidebar']/div[contains(@id,'allEvents')]//ul[@id='allTopics']//span[contains(text(),'Free')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='sidebar']/div[contains(@id,'allEvents')]//ul[@id='allTopics']//span[contains(text(),'This Weekend')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='sidebar']/div[contains(@id,'allEvents')]//ul[@id='eventsNav']//span[contains(text(),'Sports &amp; Recreation')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='sidebar']/div[contains(@id,'allEvents')]//ul[@id='eventsNav']//span[contains(text(),'Art &amp; Entertainment')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='sidebar']/div[contains(@id,'allEvents')]//ul[@id='eventsNav']//span[contains(text(),'Schools')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='sidebar']/div[contains(@id,'allEvents')]//a[contains(@href,'/posts/event/new') and contains(text(),'Post an event')]/i[contains(@class,'icon_plus-white')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='sidebar']/div[contains(@id,'allEvents')]//a[contains(@href,'/posts/event/new') and contains(text(),'Post an event')]</td>
+	<td></td>
+</tr>
+<!--Boards Page - Main Bar-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[@class='footroom']//i[contains(@class,'icon_all-events-xlarge')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[@class='footroom']//span[contains(text(),'All Events')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@id,'newsletter_subscription')]//i[contains(@class,'icon_email')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@id,'newsletter_subscription')]//span[contains(text(),'Get the daily newsletter')]</td>
+	<td></td>
+</tr>
+<!--Like Tweet Bar-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//button[@type='submit']/i[contains(@class,'like')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//button[@type='submit' and contains(text(),'Like')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[contains(@class,'pluginCountButton')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//span[@id='l' and text()='Tweet']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=count</td>
+	<td></td>
+</tr>
+<!--Big Event Box-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@class,'more-footroom')]//div[@class='small-theme-header' and contains(text(),'Have a big event coming up? ')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Tell your community all about it. </td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@class,'more-footroom')]/a[contains(@href,'/posts/event/new') and contains(text(),'Post an event')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@class,'more-footroom')]/a[contains(@href,'/posts/event/new') and contains(text(),'Post an event')]/i[contains(@class,'icon_plus-white')]</td>
+	<td></td>
+</tr>
+<!--Pick Date-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//span[contains(text(),'This week')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//span[contains(@class,'add-on')]/i[contains(@class,'icon_date-picker')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//input[contains(@class,'filter_by_date') and @value='Pick a date' and @type='text']</td>
+	<td></td>
+</tr>
+<!--Events Feed-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@data-page,'events:feed')]//div[contains(@class,'event-page')]//a[contains(@class,'d_today')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyXpathCount</td>
+	<td>//div[@class='content']//div[contains(@data-page,'events:feed')]//div[contains(@class,'event-page')]//ul[contains(@class,'date-list')]/li</td>
+	<td>7</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@class='content']//div[contains(@data-page,'events:feed')]//div[contains(@class,'event-page')]//ul[contains(@class,'date-list')]/li[1]//div[1]</td>
+	<td>today</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@class='content']//div[contains(@data-page,'events:feed')]//div[contains(@class,'event-page')]//ul[contains(@class,'date-list')]/li[1]//div[2]</td>
+	<td>javascript{(new Date()).getDate();}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@class='content']//div[contains(@data-page,'events:feed')]//div[contains(@class,'event-page')]//ul[contains(@class,'date-list')]/li[2]//div[2]</td>
+	<td>javascript{(new Date()).getDate()+1;}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@class='content']//div[contains(@data-page,'events:feed')]//div[contains(@class,'event-page')]//ul[contains(@class,'date-list')]/li[3]//div[2]</td>
+	<td>javascript{(new Date()).getDate()+2;}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@class='content']//div[contains(@data-page,'events:feed')]//div[contains(@class,'event-page')]//ul[contains(@class,'date-list')]/li[4]//div[2]</td>
+	<td>javascript{(new Date()).getDate()+3;}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@class='content']//div[contains(@data-page,'events:feed')]//div[contains(@class,'event-page')]//ul[contains(@class,'date-list')]/li[5]//div[2]</td>
+	<td>javascript{(new Date()).getDate()+4;}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@class='content']//div[contains(@data-page,'events:feed')]//div[contains(@class,'event-page')]//ul[contains(@class,'date-list')]/li[6]//div[2]</td>
+	<td>javascript{(new Date()).getDate()+5;}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@class='content']//div[contains(@data-page,'events:feed')]//div[contains(@class,'event-page')]//ul[contains(@class,'date-list')]/li[7]//div[2]</td>
+	<td>javascript{(new Date()).getDate()+6;}</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@id,'feed')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@id,'feed')]//div[contains(@class,'events_for_day')]/div[contains(@class,'feed-comments')]//i[contains(@class,'icon_default-event-image')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@id,'feed')]//div[contains(@class,'events_for_day')]/div[contains(@class,'feed-comments')]//div[contains(@class,'half-footroom')]/a[contains(@href,'/groups/events')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@id,'feed')]//div[contains(@class,'events_for_day')]/div[contains(@class,'feed-comments')]//div[contains(@class,'half-footroom')]/time[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@id,'feed')]//div[contains(@class,'events_for_day')]/div[contains(@class,'feed-comments')]//div[contains(@class,'half-footroom')]/time[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@id,'feed')]//div[contains(@class,'events_for_day')]/div[contains(@class,'feed-comments')]//div[contains(@class,'half-footroom')]/a[contains(@href,'http://www.google.com/calendar/event') and contains(text(),'Add To Your Calendar')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@id,'feed')]//div[contains(@class,'events_for_day')]/div[contains(@class,'feed-comments')]//div[contains(@class,'half-footroom')]/div[contains(text(),'Location')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='content']//div[contains(@id,'feed')]//div[contains(@class,'events_for_day')]/div[contains(@class,'feed-comments')]//div[contains(@class,'half-footroom')]/div[contains(text(),'Location')]/a[contains(@href,'mapq.st/map')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='feed']//i[contains(@class,'comment-icon')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='feed']//span[contains(@class,'comments_count')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='feed']//i[contains(@class,'recommend-icon')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='feed']//i[contains(@class,'icon_dot-separator')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='feed']//div[contains(@class,'feed-content')]//a[contains(@href,'users')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Show More</td>
+	<td></td>
+</tr>
+<!--Footer-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(@href,'www.patch.com')]/i[contains(@class,'footer-logo')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(@href,'www.patch.com')]/strong[contains(text(),'Find your Patch')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(@href,'blogs/new')]/strong[contains(text(),'Start a Blog')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[contains(@class,'media headroom')]/a[contains(@href,'users')]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>regexp:.* Patch Editor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(@data-ctrl,'footer:editor:name')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(@data-ctrl,'footer:editor:email')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img[alt=&quot;Feedback bubble&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>exact:What do you think of the New Patch?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Let us know.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Copyright ©2013 Patch. All rights reserved.</td>
+	<td></td>
+</tr>
+<!--Footer Link-->
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Connect with Patch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.inline-icon.icon_email-icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Get the Patch Newsletter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(@data-ctrl,'footer:newsletter') and contains(@href,'join')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.inline-icon.icon_twitter-small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Follow us on Twitter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(@data-ctrl,'footer:twitter') and contains(@href,'twitter')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=i.inline-icon.icon_facebook-small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Like us on Facebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(@data-ctrl,'footer:facebook') and contains(@href,'facebook')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Post Something</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Post on the Boards</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Post an Event</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Write a Review</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[contains(@class,'footer-post')]//a[contains(@data-ctrl,'footer:start:blog') and contains(@href,'/blogs/new')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Your Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(text(),'Sign In')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Join Patch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=exact:Why Join?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Help</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Solve a problem</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Tips &amp; Help</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Contact us</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Patch Info</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=About us</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Jobs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[contains(@class,'foot-bottom')]//li[contains(@class,'mobile')]//a[contains(@data-ctrl,'footer:terms') and contains(@href,'/terms')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=About our Ads</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[contains(@class,'foot-bottom')]//li[contains(@class,'mobile')]//a[contains(@data-ctrl,'footer:privacy') and contains(@href,'/privacy')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Patch Blog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Partner with Us</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Advertise</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Claim your listing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Add your business</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=PatchU</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Volunteer</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

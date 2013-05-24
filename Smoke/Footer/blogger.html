@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://bellmore.nixon.i.patch.com/" />
+<title>blogger</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">blogger</td></tr>
+</thead><tbody>
+<!--Login as Editor-->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='nav_messages']/li[3]/a/strong</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>mellissa.mcconnell@patch.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=signin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//span[text()='Your Blogs']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[contains(@src, 'your-blogs-icon')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='Your Blogs']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=+ Start a Blog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'atest')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Settings</td>
+	<td></td>
+</tr>
+<!--Inline Posting Box-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=user-img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.default-news-message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//i[contains(@class, 'icon_add-photo-light')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//i[contains(@class, 'icon_add-video-light')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.default-news-message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=post_short_body</td>
+	<td>Inline posting </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.upload_cta</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.default-news-message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeAndWait</td>
+	<td>id=post_short_body</td>
+	<td>asad zaman</td>
+</tr>
+<tr>
+	<td>typeAndWait</td>
+	<td>id=post_title</td>
+	<td>asad zaman</td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>id=post_title</td>
+	<td>\9</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[contains(text(),'Post')]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
